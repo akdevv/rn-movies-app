@@ -18,6 +18,7 @@ module.exports = {
         "muted-text": "#8A8A8A",
       },
       fontFamily: {
+        sans: ["Inter", "sans-serif"],
         "inter": ["Inter", "sans-serif"],
         "plus-jakarta": ["Plus Jakarta Sans", "sans-serif"],
         "space-grotesk": ["Space Grotesk", "sans-serif"],

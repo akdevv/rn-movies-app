@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "rn-movies-app",
+    "name": "Movies App",
     "slug": "rn-movies-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "rnmoviesapp",
+    "scheme": "moviesapp",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "ios": {
@@ -26,6 +26,47 @@
     "plugins": [
       "expo-router",
       [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Inter-Regular.ttf",
+            "./assets/fonts/PlusJakartaSans-Regular.ttf",
+            "./assets/fonts/SpaceGrotesk-Regular.ttf"
+          ],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Inter",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Inter-Regular.ttf",
+                    "weight": 400
+                  }
+                ]
+              },
+              {
+                "fontFamily": "Plus Jakarta Sans",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/PlusJakartaSans-Regular.ttf",
+                    "weight": 400
+                  }
+                ]
+              },
+              {
+                "fontFamily": "Space Grotesk",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/SpaceGrotesk-Regular.ttf",
+                    "weight": 400
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
@@ -33,7 +74,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
